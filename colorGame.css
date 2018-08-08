@@ -1,6 +1,8 @@
 
 body {
     background-color: #232323;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 .square {
@@ -9,6 +11,10 @@ body {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 10%;
+    transition: background .6s;
+    -moz-transition: background .6s;
+    -webkit-transition: background .6s;
 }
 
 #container {
@@ -18,8 +24,55 @@ body {
 
 h1 {
     color: white;
+    text-align: center;
+    background: steelblue;
+    font-weight: normal;
+    text-transform: uppercase; 
+    line-height: 1.1;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-span {
+/* span {
     color: white;
+} */
+
+#stripe {
+    background: white;
+    height: 30px;
+    text-align: center;
+    color: black; 
+}
+
+.selected {
+    color: white;
+    background: steelblue;
+}
+
+#displayColor {
+    font-size: 150%;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    color: steelblue;
+    height: 100%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all .3s;
+    outline: none;
+}
+
+#message {
+    display: inline-block;
+    width: 15%;
+}
+
+button:hover {
+    color: white;
+    background: steelblue;
 }
